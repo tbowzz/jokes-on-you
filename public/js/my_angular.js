@@ -23,7 +23,7 @@ myApp.controller('JokeMaker', JokeMaker);
 
 function JokeMaker ($scope, jokeFetcher, $http) 
 {
-  $scope.joke_text = 'Why did the chicken cross the road?';
+  $scope.joke_text = 'Yo mamma so fat she has her own moons';
   $scope.answer = 'To get to the other side';
 
   var newJoke = "What's black and white?"
@@ -34,7 +34,7 @@ function JokeMaker ($scope, jokeFetcher, $http)
   $scope.updatePunchline = function() 
   {
     console.log("updatePunchline called");
-    $scope.punchline = $scope.answer.toUpperCase() + '!';
+    $scope.punchline = 'Ayoooooo!';
   };
 
   $scope.resetJoke = function() 

@@ -1,0 +1,17 @@
+
+> startbootstrap-new-age@4.0.0-beta.2 start /home/bitnami/jokes-on-you
+> PORT=3006 node ./bin/www
+
+[0mGET / [36m304 [0m7.249 ms - -[0m
+[0mGET /vendor/bootstrap/css/bootstrap.min.css [36m304 [0m1.532 ms - -[0m
+[0mGET /css/new-age.min.css [36m304 [0m0.755 ms - -[0m
+[0mGET /js/my_angular.js [36m304 [0m0.637 ms - -[0m
+[0mGET /img/bg-pattern.png [36m304 [0m0.267 ms - -[0m
+[0mGET /joke [32m200 [0m66.489 ms - 88[0m
+[0mGET / [32m200 [0m3.974 ms - 1574[0m
+[0mGET /vendor/bootstrap/css/bootstrap.min.css [36m304 [0m0.646 ms - -[0m
+[0mGET /css/new-age.min.css [36m304 [0m0.598 ms - -[0m
+[0mGET /js/my_angular.js [36m304 [0m0.335 ms - -[0m
+[0mGET /img/bg-pattern.png [36m304 [0m0.252 ms - -[0m
+[0mGET /joke [32m200 [0m317.069 ms - 85[0m
+[0mGET /joke [32m200 [0m40.859 ms - 71[0m
