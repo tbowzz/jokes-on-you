@@ -1,41 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="myApp" lang="en">
 
   <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
     <title>Jokes On You</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="css/new-age.min.css" rel="stylesheet">
 
   </head>
 
-  <body id="page-top">
+  <body>
 
     <header class="masthead">
-      <div class="container h-100">
+      <div class="container h-100" ng-controller="JokeMaker">
+
         <div class="row h-100">
           
 
           <div class="col-lg-7 my-auto">
             <div class="header-content mx-auto">
-              <h1 class="mb-5">Why did the chicken cross the road?</h1>
-              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Show the Answer</a>
+              <h1 ng-model="joke_text">{{joke_text}}</h1>
+              <a class="btn btn-outline btn-xl js-scroll-trigger" ng-click='updatePunchline()'>Show the Answer</a>
+              <a class="btn btn-outline btn-xl js-scroll-trigger" ng-click='resetJoke()'>Next Joke</a>
             </div>
           </div>
 
@@ -45,7 +35,7 @@
               <div class="device-mockup iphone6_plus portrait white">
                 <div class="device">
                   <div class="screen">
-                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
+                    <h1 class="mb-5" ng-model="punchline">{{punchline}}</h1>
                   </div>
                 </div>
               </div>
@@ -54,7 +44,6 @@
 
 
         </div>
-      </div>
     </header>
 
     <footer>
@@ -63,15 +52,9 @@
       </div>
     </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/new-age.min.js"></script>
+    <!-- AAAANGULAR -->
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="js/my_angular.js"></script>
 
   </body>
 
